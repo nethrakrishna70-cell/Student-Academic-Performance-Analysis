@@ -1,0 +1,15 @@
+Total Students = DISTINCTCOUNT(Student_Performance[Student_ID])
+
+Average Final Marks = AVERAGE(Student_Performance[Final_Exam_Marks])
+
+Average Attendance Percentage = AVERAGE(Student_Performance[Attendance_Percentage])
+
+Passed Students = CALCULATE([Total Students], Student_Performance[Final_Exam_Marks] >= 40)
+
+Pass Percentage = DIVIDE([Passed Students], [Total Students], 0) * 100
+
+Failed Students = CALCULATE([Total Students], Student_Performance[Final_Exam_Marks] < 40)
+
+Average Marks by Department = AVERAGE(Student_Performance[Final_Exam_Marks])
+
+Student Count = DISTINCTCOUNT(Student_Performance[Student_ID])

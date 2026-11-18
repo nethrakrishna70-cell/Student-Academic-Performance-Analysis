@@ -1,0 +1,14 @@
+{
+  "name": "Student Academic Performance",
+  "dataColors": [
+    "#1F4E78",
+    "#70AD47",
+    "#ED7D31",
+    "#A5A5A5",
+    "#5B9BD5",
+    "#FFC000"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1F1F1F",
+  "tableAccent": "#1F4E78"
+}

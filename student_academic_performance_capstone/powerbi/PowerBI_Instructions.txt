@@ -1,0 +1,15 @@
+POWER BI DESKTOP BUILD GUIDE
+1. Get Data > Text/CSV > select Student_Performance_Cleaned.csv.
+2. In Power Query, confirm data types; load the table as Student_Performance.
+3. Create measures from DAX_Measures.dax.
+4. Add five Card visuals: Total Students, Average Final Marks, Average Attendance Percentage, Pass Percentage, Failed Students.
+5. Add clustered bar: Department and Average Final Marks.
+6. Add donut: Result_Recalculated and Total Students (or use a calculated Result column based on Final_Exam_Marks >= 40).
+7. Add bar: Performance_Category and Student Count.
+8. Add column/line chart: Semester and Average Final Marks.
+9. Add scatter: Attendance_Percentage (X), Final_Exam_Marks (Y), Student_ID (Details).
+10. Add table: Student_ID, Department, Semester, Final_Exam_Marks; visual filter Top N = 10 by Final_Exam_Marks.
+11. Add slicers: Department, Semester, Gender, Performance_Category.
+12. Add text box: Pass threshold used in this analysis: 40/100.
+13. Apply PowerBI_Theme.json. Save as Student_Academic_Performance_Dashboard.pbix.
+Note: PBIX is a proprietary Power BI Desktop project and must be saved in Power BI Desktop. dashboard_preview.png is a static preview, not a PBIX file.
